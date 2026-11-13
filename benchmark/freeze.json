@@ -1,0 +1,9 @@
+{
+  "manifest_created_at": "2026-11-13T11:47:24.028105+00:00",
+  "questions_sha256": "834f6d518dece157f17f4ee948b28e4e9e14205499bbd64a7b06dfdc8ef16a20",
+  "config_sha256": "c15ef63c99ea37782660c34b4560d7e070c031d878efd80c6dad9be659500162",
+  "pdf_sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+  "selection_rule": "Choose shared size by total dev Hit@3 across ABC; then total dev Hit@1; then smaller size. Choose strategy by dev Hit@3, then Hit@1, then fewer chunks, then alphabetic.",
+  "chronology": "This canonical manifest was assembled for packaging after execution. Pre-retrieval question/code hashes and timestamps are in configs/english_plan.json; dev selection before test is in results/english_run/selection.json. No post-test ranking changes.",
+  "pre_retrieval_plan_sha256": "b84d2d951e545243fb0a9cc561e9b3b00c8817f515604b6940314d893a025a49"
+}

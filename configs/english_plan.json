@@ -1,0 +1,23 @@
+{
+  "prepared_at": "2026-11-13T11:45:26.607194+00:00",
+  "version": "ABC",
+  "profile_sizes": [
+    1000,
+    1400,
+    1800
+  ],
+  "A": "fixed-size, overlap 200 characters",
+  "B": "sentence-aware within exact section spans, no overlap",
+  "C": "same chunks/index as B; only user-supplied chapter filter",
+  "shared_preprocessing": "English queries throughout. Section/chapter prefix for embedding only; remove URL/video/footer boilerplate from indexed text only. Original evidence text/offsets retained.",
+  "embedding_model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "selection_rule": "Choose shared size by total dev Hit@3 across ABC; then total dev Hit@1; then smaller size. Choose strategy by dev Hit@3, then Hit@1, then fewer chunks, then alphabetic.",
+  "questions_sha256": "834f6d518dece157f17f4ee948b28e4e9e14205499bbd64a7b06dfdc8ef16a20",
+  "code_sha256": "f9b1d2fb56c7096ea13172c584f5257183e54221e0d465e8a420dc0cb9b6d02c",
+  "glossary_module_sha256": "b9171fdb84a4b699c520b2e7c7db0f3f8401e90da2f0626354b250055625cf25",
+  "pages_sha256": "fbfaef1e0b9c8083faa12193c4cf049a3fae67b76f32e72a76f16b9d2a346a4d",
+  "new_test_not_yet_retrieved": true,
+  "test_not_used_for_selection": true,
+  "limitations": "Development used this textbook and a known dev set. Test questions were frozen before retrieval; AI-assisted purposive sampling, not external human evaluation."
+}

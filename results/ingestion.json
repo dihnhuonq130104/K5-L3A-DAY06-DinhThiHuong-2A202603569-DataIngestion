@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-13T11:46:02.896013+00:00",
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "collections": {
+    "A": "python-en-a-1800-f9b1d2fb56",
+    "B": "python-en-b-1800-f9b1d2fb56",
+    "C": "python-en-b-1800-f9b1d2fb56"
+  },
+  "page_count": 43,
+  "metric": "cosine",
+  "stats": {
+    "A": {
+      "chunk_count": 44,
+      "reload_count": 44
+    },
+    "B": {
+      "chunk_count": 53,
+      "reload_count": 53
+    },
+    "C": {
+      "chunk_count": 53,
+      "reload_count": 53
+    }
+  },
+  "embedding_input": "English section/chapter context prefix and index-only boilerplate cleanup; original evidence text unchanged.",
+  "api_tokens_development_and_ingest": 238,
+  "cost_note": "Includes all tested size profiles; cached vectors do not incur new calls. Historical provider usage is logged separately."
+}

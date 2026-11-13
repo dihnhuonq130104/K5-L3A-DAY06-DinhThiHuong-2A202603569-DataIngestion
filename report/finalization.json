@@ -1,0 +1,8 @@
+{
+  "finalized_at": "2026-11-13T12:14:00.570488+00:00",
+  "report": "report/individual/2A202603569_DinhThiHuong.md",
+  "sha256": "d4534fb424af75e20083dd7785424b3dc6347f7b5ca858cb70f6719bb11b29ec",
+  "language": "Vietnamese",
+  "status": "finalized_by_student",
+  "policy": "Preserve the student-finalized report byte-for-byte. Verification and packaging must match this hash; automatic regeneration is disabled."
+}

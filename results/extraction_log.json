@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-13T10:22:45.322062+00:00",
+  "total_pdf_pages": 397,
+  "selected_pages": 43,
+  "selected_empty_pages": [],
+  "all_empty_pages": [
+    1,
+    2
+  ],
+  "warnings": [
+    "No OCR; text extraction does not preserve table column layout.",
+    "Source p86 prints lowercase true/false in prose; Python keywords are True/False."
+  ]
+}

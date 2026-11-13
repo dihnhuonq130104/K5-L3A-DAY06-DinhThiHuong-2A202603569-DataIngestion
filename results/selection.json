@@ -1,0 +1,30 @@
+{
+  "selected_at": "2026-11-13T11:46:02.896013+00:00",
+  "selected_strategy": "B",
+  "rule": "Choose shared size by total dev Hit@3 across ABC; then total dev Hit@1; then smaller size. Choose strategy by dev Hit@3, then Hit@1, then fewer chunks, then alphabetic.",
+  "size": 1800,
+  "dev_metrics": [
+    {
+      "strategy": "A",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 10,
+      "chunks": 44
+    },
+    {
+      "strategy": "B",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 13,
+      "chunks": 53
+    },
+    {
+      "strategy": "C",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 13,
+      "chunks": 53
+    }
+  ],
+  "test_not_yet_retrieved_at_selection": true
+}

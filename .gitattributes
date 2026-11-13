@@ -1,0 +1,5 @@
+# Frozen source/report hashes require identical bytes across platforms.
+* -text
+*.pdf binary
+*.png binary
+*.jpg binary

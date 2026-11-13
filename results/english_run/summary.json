@@ -1,0 +1,50 @@
+{
+  "at": "2026-11-13T11:46:22.444228+00:00",
+  "selection": "B",
+  "size": 1800,
+  "dev_metrics": [
+    {
+      "strategy": "A",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 10,
+      "chunks": 44
+    },
+    {
+      "strategy": "B",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 13,
+      "chunks": 53
+    },
+    {
+      "strategy": "C",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 13,
+      "chunks": 53
+    }
+  ],
+  "test_metrics": [
+    {
+      "strategy": "A",
+      "n": 10,
+      "hit1_n": 6,
+      "hit3_n": 8
+    },
+    {
+      "strategy": "B",
+      "n": 10,
+      "hit1_n": 5,
+      "hit3_n": 8
+    },
+    {
+      "strategy": "C",
+      "n": 10,
+      "hit1_n": 5,
+      "hit3_n": 8
+    }
+  ],
+  "api_tokens_test": 195,
+  "limitations": "Development used this textbook and a known dev set. Test questions were frozen before retrieval; AI-assisted purposive sampling, not external human evaluation."
+}

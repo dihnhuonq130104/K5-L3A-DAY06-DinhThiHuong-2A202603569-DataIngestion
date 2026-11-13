@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-13T12:14:36.361687+00:00",
+  "frozen_hashes": "pass",
+  "source_pages": 43,
+  "questions": 25,
+  "dev": 15,
+  "test": 10,
+  "traces": 75,
+  "top3_source_spans_verified": 225,
+  "metrics_recomputed": "pass",
+  "chunk_source_spans": "pass",
+  "source_section_links": "pass",
+  "chapter_filter": "pass",
+  "assisted_labels_complete": true,
+  "human_review_claimed": false,
+  "test_note": "Selection fixed on dev; AI-assisted test authoring from the same book is not external validation.",
+  "unit_ui_tests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "python -X utf8 -m unittest discover -s tests -v"
+  },
+  "reproduction": "All 75 ABC traces matched original top-3 IDs and metrics.",
+  "real_chat": "GPT-5.4 English answer completed with valid source-page citations; results/chat_demo.json.",
+  "package_check": "Extracted ZIP opens without .env or index; saved results visible, chat disabled; hashes and offline verification pass. Existing Python environment used.",
+  "language_policy": {
+    "questions_evidence_answers": "English",
+    "individual_report_and_presentation_explanation": "Vietnamese"
+  },
+  "finalized_report_sha256": "d4534fb424af75e20083dd7785424b3dc6347f7b5ca858cb70f6719bb11b29ec",
+  "report_metric_chunk_and_qualitative_tables": "pass",
+  "final_validation_at": "2026-11-13T12:15:51.733873+00:00",
+  "final_report_preserved": "Byte-for-byte unchanged from the student-finalized report; automatic regeneration disabled."
+}

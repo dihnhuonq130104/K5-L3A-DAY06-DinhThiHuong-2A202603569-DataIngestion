@@ -1,0 +1,42 @@
+{
+  "source_id": "openstax-python-2026",
+  "source": "https://openstax.org/details/books/introduction-python-programming",
+  "pdf": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+  "page_ranges": [
+    {
+      "start": 96,
+      "end": 120,
+      "chapter": "Decisions"
+    },
+    {
+      "start": 126,
+      "end": 143,
+      "chapter": "Loops"
+    }
+  ],
+  "language": "English",
+  "strategies": {
+    "A": {
+      "method": "fixed",
+      "size": 1800,
+      "overlap": 200,
+      "filter": false
+    },
+    "B": {
+      "method": "section_sentence",
+      "size": 1800,
+      "overlap": 0,
+      "filter": false
+    },
+    "C": {
+      "method": "section_sentence",
+      "size": 1800,
+      "overlap": 0,
+      "filter": true
+    }
+  },
+  "selection_rule": "Choose shared size by total dev Hit@3 across ABC; then total dev Hit@1; then smaller size. Choose strategy by dev Hit@3, then Hit@1, then fewer chunks, then alphabetic.",
+  "embedding_preprocessing": "English queries throughout. Section/chapter prefix for embedding only; remove URL/video/footer boilerplate from indexed text only. Original evidence text/offsets retained.",
+  "development_plan": "configs/english_plan.json",
+  "selection_evidence": "results/english_run/selection.json"
+}

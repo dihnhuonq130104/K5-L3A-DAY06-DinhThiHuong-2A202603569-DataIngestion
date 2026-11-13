@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-13T12:10:25.340023+00:00",
+  "assisted": [
+    {
+      "strategy": "A",
+      "coherence_mean_per_anchor": 1.1,
+      "grounding_counts": {
+        "2": 8,
+        "0": 2
+      },
+      "grounding_mean": 1.6,
+      "metadata_correct": 30,
+      "metadata_n": 30,
+      "chapter_compliance": 4,
+      "filtered_questions": 4,
+      "filter_applied": false
+    },
+    {
+      "strategy": "B",
+      "coherence_mean_per_anchor": 1.2,
+      "grounding_counts": {
+        "2": 8,
+        "0": 2
+      },
+      "grounding_mean": 1.6,
+      "metadata_correct": 30,
+      "metadata_n": 30,
+      "chapter_compliance": 4,
+      "filtered_questions": 4,
+      "filter_applied": false
+    },
+    {
+      "strategy": "C",
+      "coherence_mean_per_anchor": 1.2,
+      "grounding_counts": {
+        "2": 8,
+        "0": 2
+      },
+      "grounding_mean": 1.6,
+      "metadata_correct": 30,
+      "metadata_n": 30,
+      "chapter_compliance": 4,
+      "filtered_questions": 4,
+      "filter_applied": true
+    }
+  ],
+  "human_confirmed": false
+}

@@ -1,0 +1,818 @@
+[
+  {
+    "chunk_id": "20ee7eb633ac7a682398f240",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 96,
+    "text": "bool data type\nPeople often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza?\nEx: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or\nfalse. The bool data type, standing for Boolean, represents a binary value of either true or false. true and\nfalse are keywords, and capitalization is required.\nCHECKPOINT\nExample: Crosswalk sign\nExample: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)\nCONCEPTS IN PRACTICE\nUsing Boolean variables\nConsider the following code:\nis_fruit = \"True\"\nis_vegetable = 0\nis_dessert = False\n1 . What is the data type of is_fruit?\na. Boolean\nb. integer\nc. string\n2 . What is the data type of is_vegetable?\na. Boolean\nb. integer\nc. string\n3 . What is the data type of is_dessert?\na. Boolean\nb. integer\nc. string\n4 . How many values can a Boolean variable represent?\na. 2\nb. 4\nc. 8\n5 . Which is a valid value for a Boolean variable?\na. true\nb. True\nc. 1\n6 . Suppose the following is added to the code above:\nis_dessert = 0\n86     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 86,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1096,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "679e93a961888243167d5a7a",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 97,
+    "text": "print(type(is_dessert))\nWhat is the output?\na. <class 'bool'>\nb. <class 'int'>\nc. Error\nType conversion with bool()\nDeciding whether a value is true or false is helpful when writing programs/statements based on decisions.\nConverting data types to Booleans can seem unintuitive at first. Ex: Is \"ice cream\" True? But the\nconversion is actually simple.\nbool() converts a value to a Boolean value, True or False.\n• True: any non-zero number, any non-empty string\n• False: 0, empty string\nCHECKPOINT\nConverting integers, floats, and strings using bool()\nConverting integers, floats, and strings using bool(); ch 4, video 2 (https://www.openstax.org/r/converting-\nusing-bool)\nCONCEPTS IN PRACTICE\nConverting numeric types and strings to Booleans\n7 . bool(0.000)\na. True\nb. False\n8 . bool(-1)\na. True\nb. False\n9 . bool(\"\")\na. True\nb. False\n10 . bool(\"0\")\na. True\nb. False\n11 . Given input False, what is bool(input())?\na. True\nb. False",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 87,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 929,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "58ff2c297ee061a0eeb7ce4b",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 98,
+    "text": "CONCEPTS IN PRACTICE\nConverting Booleans to numeric types and strings\nGiven is_on = True, what is the value of each expression?\n12 . float(is_on)\na. 0.0\nb. 1.0\n13 . str(is_on)\na. \"is_on\"\nb. \"True\"\n14 . int(is_on)\na. 0\nb. 1\nComparison operators\nProgrammers often have to answer questions like \"Is the current user the admin?\" A programmer may want to\ncompare a string variable, user, to the string, \"admin\". Comparison operators are used to compare values,\nand the result is either true or false. Ex: is_admin = (user == \"admin\"). user is compared with \"admin\"\nusing the == operator, which tests for equality. The Boolean variable, is_admin, is assigned with the Boolean\nresult.\nThe 6 comparison operators:\n• equal to: ==\n• not equal to: !=\n• greater than: >\n• less than: <\n• greater than or equal to: >=\n• less than or equal to: <=\nCHECKPOINT\nExample: Rolling a d20 in a tabletop game\nExample: Rolling a d20 in a tabletop game; ch 4, video 3 (https://www.openstax.org/r/rolling-d20)\nCONCEPTS IN PRACTICE\nComparing values\nFor each new variable, what is the value of compare_result?\n15 . x = 14\ncompare_result = (x <= 13)\na. True\n88     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 88,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1148,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "dcb3749994d30b0cf98c8044",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 99,
+    "text": "b. False\n16 . w = 0\ncompare_result = (w != 0.4)\na. True\nb. False\n17 . v = 4\ncompare_result = (v < 4.0)\na. True\nb. False\n18 . y = 2\ncompare_result = (y > \"ab\")\na. True\nb. False\nc. Error\n19 . z = \"cilantro\"\ncompare_result = (z == \"coriander\")\na. True\nb. False\n20 . a = \"dog\"\ncompare_result = (a < \"cat\")\na. True\nb. False\n= VS ==\nA common mistake is using = for comparison instead of ==. Ex: is_zero = num=0 will always assign\nis_zero and num with 0, regardless of num's original value. The = operator performs assignment and will\nmodify the variable. The == operator performs comparison, does not modify the variable, and produces\nTrue or False.\nEXPLORING FURTHER\n• Unicode Basic Latin Chart (https://openstax.org/r/100unicodelatin)",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 89,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 730,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "a261be6f40a166682b778564",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 100,
+    "text": "Friday Boolean\n\"It's Friday, I'm in love\" —from \"Friday I'm in Love,\" a song released by the Cure in 1992.\nWrite a program that reads in the day of the week. Assign the Boolean variable, in_love, with the result of\nwhether the day is Friday or not.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n4-1-boolean-values)\nEven numbers\nWrite a program that reads in an integer and prints whether the integer is even or not. Remember, a\nnumber is even if the number is divisible by 2. To test this use number % 2 == 0. Ex: If the input is 6, the\noutput is \"6 is even: True\".\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n4-1-boolean-values)\n4.2 If-else statements\nLearning objectives\nBy the end of this section you should be able to\n• Identify which operations are performed when a program with if and if-else statements is run.\n• Identify the components of an if and if-else statement and the necessary formatting.\n• Create an if-else statement to perform an operation when a condition is true and another operation\notherwise.\nif statement\nIf the weather is rainy, grab an umbrella! People make decisions based on conditions like if the weather is\nrainy, and programs perform operations based on conditions like a variable's value. Ex: A program adds two\nnumbers. If the result is negative, the program prints an err",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 90,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1400,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "48ffb9029d053532e0b485df",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 100,
+    "text": "nditions like if the weather is\nrainy, and programs perform operations based on conditions like a variable's value. Ex: A program adds two\nnumbers. If the result is negative, the program prints an error.\nA condition is an expression that evaluates to true or false. An if statement is a decision-making structure\nthat contains a condition and a body of statements. If the condition is true, the body is executed. If the\ncondition is false, the body is not executed.\nThe if statement's body must be grouped together and have one level of indentation. The PEP 8 style guide\nrecommends four spaces per indentation level. The Python interpreter will produce an error if the body is\nempty.\nTRY IT\nTRY IT\n90     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 90,
+      "language": "en",
+      "char_start": 1200,
+      "char_end": 1919,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "a264eaa053f1ddf22fc94776",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 101,
+    "text": "CHECKPOINT\nExample: Quantity check\nExample: Quantity check; ch 4, video 4 (https://www.openstax.org/r/quantity-check)\nUSING BOOLEAN VARIABLES\nA Boolean variable already has a value of True or False and can be used directly in a condition rather than\nusing the equality operator. Ex: if is_raining == True: can be simplified to if is_raining:.\nCONCEPTS IN PRACTICE\nUsing if statements\n1 . Given the following, which part is the condition?\nif age < 12:\n  print(\"Discount for children available\")\na. age\nb. age < 12\nc. print(\"Discount for children available\")\n2 . Given the following, which lines execute if the condition is true?\n1 print(\"Have a great day.\")\n2 if is_raining:\n3   print(\"Don't forget an umbrella!\")\n4 print(\"See you soon.\")\na. 1, 2, 3\nb. 1, 2, 4\nc. 1, 2, 3, 4\n3 . Given the following (same as above), which lines execute if the condition is False?\n1 print(\"Have a great day.\")\n2 if is_raining:\n3   print(\"Don't forget an umbrella!\")\n4 print(\"See you soon.\")\na. 1, 2, 3\nb. 1, 2, 4\nc. 1, 2, 3, 4\n4 . Given num = -10, what is the final value of num?\nif num < 0:\n  num = 25\nif num < 100:",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 91,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1097,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "9f2212ec4936905abd14fad8",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 102,
+    "text": "num = num + 50\na. -10\nb. 40\nc. 75\n5 . Given input 10, what is the final value of positive_num?\npositive_num = int(input(\"Enter a positive number:\"))\nif positive_num < 0:\n  print(\"Negative input set to 0\")\npositive_num = 0\na. 10\nb. 0\nc. Error\nif-else statement\nAn if statement defines actions to be performed when a condition is true. What if an action needs to be\nperformed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll\ndrive.\nAn else statement is used with an if statement and contains a body of statements that is executed when the\nif statement's condition is false. When an if-else statement is executed, one and only one of the branches\nis taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the\nsame level of indentation as the if statement, and the body is indented.\nif-else statement template:\n1 # Statements before\n2\n3 if condition:\n4   # Body\n5 else:\n6   # Body\n7\n8 # Statements after\nCHECKPOINT\nExample: Trivia question\nExample: Trivia question; ch 4, video 5 (https://www.openstax.org/r/trivia-question)\nCONCEPTS IN PRACTICE\nExploring if-else statements\n6 . Given the following code, the else branch is taken for which range of x?\n92     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 92,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1273,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "5386373dc7554c23e3b9e2a8",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 103,
+    "text": "if x >= 15:\n  # Do something\nelse:\n  # Do something else\na. x >= 15\nb. x <= 15\nc. x < 15\n7 . Given x = 40, what is the final value of y?\nif x > 30:\n  y = x - 10\nelse:\n  y = x + 10\na. 30\nb. 40\nc. 50\n8 . Given y = 50, which is not a possible final value of y?\nif x < 50:\n  y = y / 2\nelse:\n  y = y * 2\ny = y + 5\na. 30\nb. 55\nc. 105\nImproved division\nThe following program divides two integers. Division by 0 produces an error. Modify the program to read in\na new denominator (with no prompt) if the denominator is 0.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/4-2-if-\nelse-statements)\nConverting temperature units\nThe following program reads in a temperature as a float and the unit as a string: \"f\" for Fahrenheit or \"c\"\nfor Celsius.\nTRY IT\nTRY IT",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 93,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 792,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "5ad7ac4dde6fea7cb143fd73",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 104,
+    "text": "Calculate new_temp, the result of converting temp from Fahrenheit to Celsius or Celsius to Fahrenheit\nbased on unit. Calculate new_unit: \"c\" if unit is \"f\" and \"f\" if unit is \"c\".\nConversion formulas:\n• Degrees Celsius = (degrees Fahrenheit - 32) * 5/9\n• Degrees Fahrenheit = (degrees Celsius * 5/9) + 32\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/4-2-if-\nelse-statements)\n4.3 Boolean operations\nLearning objectives\nBy the end of this section you should be able to\n• Explain the purpose of logical operators.\n• Describe the truth tables for and, or, and not.\n• Create expressions with logical operators.\n• Interpret if-else statements with conditions using logical operators.\nLogical operator: and\nDecisions are often based on multiple conditions. Ex: A program printing if a business is open may check that\nhour >= 9 and hour < 17. A logical operator takes condition operand(s) and produces True or False.\nPython has three logical operators: and, or, and not. The and operator takes two condition operands and\nreturns True if both conditions are true.\np q p and q\nTrue True True\nTrue False False\nFalse True False\nFalse False False\nTable 4.1 Truth table: p and q.\nCHECKPOINT\nExample: Museum entry\nExample: Museum entry; ch 4, video 6 (https://www.openstax.org/r/museum-entry)\n94     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 94,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1344,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "84a8af6a2bdeb1cdcc94c422",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 105,
+    "text": "CONCEPTS IN PRACTICE\nUsing the and operator\n1 . Consider the example above. Jaden tries to enter when the capacity is 2500 and there are 2 hours\nbefore close. Can Jaden enter?\na. yes\nb. no\n2 . Consider the example above. Darcy tries to enter when the capacity is 3000. For what values of\nhrs_to_close will Darcy to be able to enter?\na. hrs_to close > 1.0\nb. no such value\n3 . Given is_admin = False and is_online = True, what is the value of is_admin and is_online?\na. True\nb. False\n4 . Given x = 8 and y = 21, what is the final value of z?\nif (x < 10) and (y > 20):\n  z = 5\nelse:\n  z = 0\na. 0\nb. 5\nLogical operator: or\nSometimes a decision only requires one condition to be true. Ex: If a student is in the band or choir, they will\nperform in the spring concert. The or operator takes two condition operands and returns True if either\ncondition is true.\np q p or q\nTrue True True\nTrue False True\nFalse True True\nFalse False False\nTable 4.2 Truth table: p or q.",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 95,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 961,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "ec7dba79e7b699d44018675e",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 106,
+    "text": "CHECKPOINT\nExample: Streaming prompt\nExample: Streaming prompt; ch 4, video 7 (https://www.openstax.org/r/streaming-prompt)\nCONCEPTS IN PRACTICE\nUsing the or operator\n5 . Given days = 21 and is_damaged is False, is the refund processed?\nif (days < 30) or is_damaged:\n  # Process refund\na. yes\nb. no\n6 . For what values of age is there no discount?\nif (age < 12) or (age > 65):\n  # Apply student/senior discount\na. age >= 12\nb. age <= 65\nc. (age >= 12) and (age <= 65)\n7 . Given a = 9 and b = 10, does the test pass?\nif (a%2 == 0 and b%2 == 1) or (a%2 == 1 and b%2 == 0):\n  # Test passed\nelse:\n  # Test failed\na. yes\nb. no\nLogical operator: not\nIf the computer is not on, press the power button. The not operator takes one condition operand and returns\nTrue when the operand is false and returns False when the operand is true.\nnot is a useful operator that can make a condition more readable and can be used to toggle a Boolean's value.\nEx: is_on = not is_on.\n96     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 96,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 980,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "2a7a57b23835dab3ae5bd35f",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 107,
+    "text": "p not p\nTrue False\nFalse True\nTable 4.3 Truth table:\nnot p.\nCHECKPOINT\nExample: Diving warning\nExample: Diving warning; ch 4, video 8 (https://www.openstax.org/r/diving-warning)\nCONCEPTS IN PRACTICE\nUsing the not operator\n8 . Given x = 13, what is the value of not(x < 10)?\na. True\nb. False\n9 . Given x = 18, is x in the correct range?\nif not(x > 15 and x < 20):\n  # x in correct range\na. yes\nb. no\n10 . Given is_turn = False and timer = 65, what is the final value of is_turn?\nif timer > 60:\n  is_turn = not is_turn\na. True\nb. False\nSpeed limits\nWrite a program that reads in a car's speed as an integer and checks if the car's speed is within the freeway\nlimits. A car's speed must be at least 45 mph but no greater than 70 mph on the freeway.\nIf the speed is within the limits, print \"Good driving\". Else, print \"Follow the speed limits\".\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n4-3-boolean-operations)\nTRY IT",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 97,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 964,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "67355c563958b2c4956a153e",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 108,
+    "text": "4.4 Operator precedence\nLearning objectives\nBy the end of this section you should be able to\n• Describe how precedence impacts order of operations.\n• Describe how associativity impacts order of operations.\n• Explain the purpose of using parentheses in expressions with multiple operators.\nPrecedence\nWhen an expression has multiple operators, which operator is evaluated first? Precedence rules provide the\npriority level of operators. Operators with the highest precedence execute first. Ex: 1 + 2 * 3 is 7 because\nmultiplication takes precedence over addition. However, (1 + 2) * 3 is 9 because parentheses take\nprecedence over multiplication.\nOperator Meaning\n() Parentheses\n** Exponentiation (right associative)\n*, /, //, % Multiplication, division, floor division, modulo\n+, - Addition, subtraction\n<, <=, >, >=, ==, != Comparison operators\nnot Logical not operator\nand Logical and operator\nor Logical or operator\nTable 4.4 Operator precedence from highest to lowest.\nCHECKPOINT\nOperator precedence\nOperator precedence; ch 4, video 9 (https://www.openstax.org/r/operator-precedence)\nCONCEPTS IN PRACTICE\nPrecedence rules\nWhich part of each expression is evaluated first?\n98     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 98,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1196,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "30f605a244edca576d6b84ca",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 109,
+    "text": "1 . x ** 2 + 6 / 3\na. 6 / 3\nb. x ** 2\nc. 2 + 6\n2 . not 3 * 5 > 10\na. 3 * 5\nb. not 3\nc. 5 > 10\n3 . z == 5 and x / 8 < 100\na. 5 and x\nb. x / 8\nc. 8 < 100\nAssociativity\nWhat if operators beside each other have the same level of precedence? Associativity determines the order of\noperations when precedence is the same. Ex: 8 / 4 * 3 is evaluated as (8/4) * 3 rather than 8 / (4*3)\nbecause multiplication and division are left associative. Most operators are left associative and are evaluated\nfrom left to right. Exponentiation is the main exception (noted above) and is right associative: that is, evaluated\nfrom right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4).\nWhen comparison operators are chained, the expression is converted into the equivalent combination of\ncomparisons and evaluated from left to right. Ex. 10 < x <= 20 is evaluated as 10 < x and x <= 20.\nCHECKPOINT\nOperation precedence\nOperation precedence; ch 4, video 10 (https://www.openstax.org/r/operation-precedence)\nCONCEPTS IN PRACTICE\nAssociativity\nHow is each expression evaluated?\n4 . 10 + 3 * 2 / 4\na. 10 + (3 * (2 / 4))\nb. 10 + ((3 * 2) / 4)\nc. (10 + 3) * (2 / 4)\n5 . 2 * 2 ** 2 ** 3\na. 2 * ((2 ** 2) ** 3)\nb. 2 * (2 ** (2 ** 3))\nc. ((2*2) ** 2) ** 3\n6 . 100 < x > 150\na. 100 < x and x < 150",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 99,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1271,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "5a89f1869d30e088ea2a5e74",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 110,
+    "text": "b. 100 < x or x > 150\nc. 100 < x and x > 150\nEnforcing order and clarity with parentheses\nOperator precedence rules can be hard to remember. Parentheses not only assert a different order of\noperations but also reduce confusion.\nCHECKPOINT\nUsing parentheses\nUsing parenthesis; ch 4, video 11 (https://www.openstax.org/r/using-parentheses)\nCONCEPTS IN PRACTICE\nUsing parentheses\n7 . Consider the example above. Why was the evaluation order different from what the programmer\nwanted?\na. Equality has precedence over and.\nb. All operators are evaluated right to left.\nc. Order is random when parentheses aren't used.\n8 . Given x = 8 and y = 9, what is the result of the following?\nx + 3 * y - 5\na. 30\nb. 44\nc. 94\n9 . Given x = 8 and y = 9, what is the result of the following?\n(x+3) * (y-5)\na. 30\nb. 44\nc. 94\nPEP 8 RECOMMENDATIONS: SPACING AROUND OPERATORS\nThe PEP 8 style guide recommends consistent spacing around operators to avoid extraneous and confusing\nwhitespace.\n• Avoid multiple spaces and an unequal amount of whitespace around operators with two operands.\nAvoid: x= y * 44\nBetter: x = y * 44\n• Avoid spaces immediately inside parentheses.\nAvoid: x = ( 4 * y )\nBetter: x = (4 * y)\n• Surround the following operators with one space: assignment, augment assignment, comparison,\n100     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 100,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1304,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "33c3ed6ee6d7a95e6e46a7b9",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 111,
+    "text": "Boolean.\nAvoid: x= y<44\nBetter: x = y < 44\n• Consider adding whitespace around operators with lower priority.\nAvoid: x = 5 * z+20\nBetter: x = 5*z + 20\n4.5 Chained decisions\nLearning objectives\nBy the end of this section you should be able to\n• Identify the branches taken in an if-elif and if-elif-else statement.\n• Create a chained decision statement to evaluate multiple conditions.\nelif\nSometimes, a complicated decision is based on more than a single condition. Ex: A travel planning site reviews\nthe layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations.\nElse if the layover is less than one hour, the site should alert for a possible missed connection.\nTwo separate if statements do not guarantee that only one branch is taken and might result in both branches\nbeing taken. Ex: The program below attempts to add a curve based on the input test score. If the input is 60,\nboth if statements are incorrectly executed, and the resulting score is 75.\nscore = int(input())\nif score < 70:\n  score += 10\n# Wrong:\nif 70 <= score < 85:\n  score += 5\nChaining decision statements with elif allows the programmer to check for multiple conditions. An elif (short\nfor else if) statement checks a condition when the prior decision statement's condition is false. An elif\nstatement is part of a chain and must follow an if (or elif) statement.\nif-elif statemen",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 101,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1400,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "d740b1d4516ee5e72aa43c3b",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 111,
+    "text": "short\nfor else if) statement checks a condition when the prior decision statement's condition is false. An elif\nstatement is part of a chain and must follow an if (or elif) statement.\nif-elif statement template:\n# Statements before\nif condition:\n  # Body\nelif condition:\n  # Body\n# Statements after",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 101,
+      "language": "en",
+      "char_start": 1200,
+      "char_end": 1498,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "ad39b431e02d1836101f8cb1",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 112,
+    "text": "CHECKPOINT\nExample: Livestream features\nExample: Livestream features; ch 4, video 12 (https://www.openstax.org/r/livestream)\nCONCEPTS IN PRACTICE\nUsing elif\n1 . Fill in the blank to execute Body 2 when condition_1 is false and condition_2 is true.\nif condition_1:\n  # Body 1\n__ condition_2:\n  # Body 2\na. if\nb. elif\nc. else\n2 . Given x = 42 and y = 0, what is the final value of y?\nif x > 44:\n  y += 2\nelif x < 50:\n  y += 5\na. 2\nb. 5\nc. 7\n3 . Which conditions complete the code such that if x is less than 0, Body 1 executes, else if x equals 0,\nBody 2 executes.\nif _________:\n  # Body 1\nelif _________:\n  # Body 2\na. x < 0\nx == 0\nb. x == 0\nx < 0\nc. x <= 0\n[no condition]\n4 . Which of the following is a valid chained decision statement?\na. if condition_1:\n  # Body 1\nelif condition_2:\n102     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 102,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 807,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "278e12c9eaa853f9bff757d4",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 113,
+    "text": "# Body 2\nb. if condition_1:\n  # Body 1\n  elif condition_2:\n    # Body 2\nc. elif condition_1:\n  # Body 1\nif condition_2:\n  # Body 2\n5 . Given attendees = 350, what is the final value of rooms?\nrooms = 1\nif attendees >= 100:\n  rooms += 3\nif attendees <= 200:\n  rooms += 7\nelif attendees <= 400:\n  rooms += 14\na. 4\nb. 15\nc. 18\nif-elif-else statements\nElifs can be chained with an if-else statement to create a more complex decision statement. Ex: A program\nshows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or\ntwo) places. Else if the piece is a bishop, show diagonal moves. Else if . . . (finish for the rest of the pieces).\nCHECKPOINT\nExample: Possible chess moves\nExample: Possible chess moves; ch 4, video 13 (https://www.openstax.org/r/chess-moves)\nCONCEPTS IN PRACTICE\nUsing elif within if-elif-else statements\n6 . Given hour = 12, what is printed?\nif hour < 8:\n  print(\"Too early\")\nelif hour < 12:\n  print(\"Good morning\")\nelif hour < 13:\n  print(\"Lunchtime\")",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 103,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1017,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "e423767083668163c120ebe2",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 114,
+    "text": "elif hour < 17:\n  print(\"Good afternoon\")\nelse:\n  print(\"Too late\")\na. Good morning\nb. Lunchtime\nc. Good afternoon\nd. Too late\n7 . Where can an elif statement be added?\n_1_\nif condition:\n  # Body\n  _2_\nelif condition:\n  # Body\n_3_\nelse:\n  # Body\n_4_\na. 1\nb. 2\nc. 3\nd. 4\n8 . Given x = -1 and y = -2, what is the final value of y?\nif x < 0 and y < 0:\n  y = 10\nelif x < 0 and y > 0:\n  y = 20\nelse:\n  y = 30\na. 10\nb. 20\nc. 30\n9 . How could the following statements be rewritten as a chained statement?\nif price < 9.99:\n  order = 50\nif 9.99 <= price < 19.99:\n  order = 30\nif price >= 19.99:\n  order = 10\na. if price < 9.99:\n104     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 104,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 640,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "a68d653a5d81331bf423436f",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 115,
+    "text": "order = 50\nelse:\n  order = 30\norder = 10\nb. if price < 9.99:\n  order = 50\nelif price < 19.99:\n  order = 30\nelif price == 19.99:\n  order = 10\nc. if price < 9.99:\n  order = 50\nelif price < 19.99:\n  order = 30\nelse:\n  order = 10\nCrochet hook size conversion\nWrite a program that reads in a crochet hook's US size and computes the metric diameter in millimeters. (A\nsubset of sizes is used.) If the input does not match B-G, the diameter should be assigned with -1.0. Ex: If\nthe input is D, the output is \"3.25 mm\".\nSize conversions for US size: mm\n• B : 2.25\n• C : 2.75\n• D : 3.25\n• E : 3.5\n• F : 3.75\n• G : 4.0\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n4-5-chained-decisions)\nColor wavelengths\nWrite a program that reads in an integer representing a visible light wavelength in nanometers. Print the\ncorresponding color using the following inclusive ranges:\n• Violet: 380–449\n• Blue: 450–484\n• Cyan: 485–499\n• Green: 500–564\n• Yellow: 565–589\nTRY IT\nTRY IT",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 105,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1004,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "0f7e0835719c3192f146fbcf",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 116,
+    "text": "• Orange: 590–624\n• Red: 625–750\nAssume the input is within the visible light spectrum, 380-750 inclusive.\nGiven input:\n550\nThe output is:\nGreen\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n4-5-chained-decisions)\n4.6 Nested decisions\nLearning objectives\nBy the end of this section you should be able to\n• Describe the execution paths of programs with nested if-else statements.\n• Implement a program with nested if-else statements.\nNested decision statements\nSuppose a programmer is writing a program that reads in a game ID and player count and prints whether the\nuser has the right number of players for the game.\nThe programmer may start with:\nif game == 1 and players < 2:\n  print(\"Not enough players\")\nif game == 1 and players > 4:\n  print(\"Too many players\")\nif game == 1 and (2 <= players <= 4):\n  print(\"Ready to start\")\nif game == 2 and players < 3:\n  print(\"Not enough players\")\nif game == 2 and players > 6:\n  print(\"Too many players\")\nif game == 2 and (3 <= players <= 6):\n  print(\"Ready to start\")\nThe programmer realizes the code is redundant. What if the programmer could decide the game ID first and\nthen make a decision about players? Nesting allows a decision statement to be inside another decision\nstatement, and is indicated by an indentation level.\nAn improved program:\n106     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 106,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1360,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "1c5c5e2b2fd373cb2f9ad4a5",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 117,
+    "text": "if game == 1:\n  if players < 2:\n    print(\"Not enough players\")\n  elif players > 4:\n    print(\"Too many players\")\n  else:\n    print(\"Ready to start\")\nif game == 2:\n  if players < 3:\n    print(\"Not enough players\")\n  elif players > 6:\n    print(\"Too many players\")\n  else:\n    print(\"Ready to start\")\n# Test game IDs 3-end\nCHECKPOINT\nExample: Poisonous plant identification\nExample: Poisonous plant identification; ch 4, video 14 (https://www.openstax.org/r/plant-identification)\nCONCEPTS IN PRACTICE\nUsing nested if-else statements\n1 . Consider the example above. Given leaf_count = 9 and leaf_shape = \"teardrop\", what is the\noutput?\na. Might be poison ivy\nb. Might be poison oak\nc. Might be poison sumac\n2 . Given num_dancers = 49, what is printed?\nif num_dancers < 0:\n  print(\"Error: num_dancers is negative\")\nelse:\n  if num_dancers % 2 == 1:\n    print(\"Error: num_dancers is odd\")\n  print(num_dancers, \"dancers\")\na. Error: num_dancers is odd\nb. 49 dancers\nc. Error: num_dancers is odd\n49 dancers\n3 . Given x = 256, y = 513, and max = 512, which of the following will execute?\nif x == y:",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 107,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1089,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "9fc4bbbf62943cd2630ced16",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 118,
+    "text": "# Body 1\nelif x < y:\n  # Body 2\n  if y >= max:\n    # Body 3\n  else:\n    # Body 4\nelse:\n  # Body 5\na. Body 2\nb. Body 2, Body 3\nc. Body 2, Body 5\n4 . Given x =118, y = 300, and max = 512, which of the following will execute?\nif x == y:\n  # Body 1\nelif x < y:\n  # Body 2\n  if y >= max:\n    # Body 3\nelse:\n  # Body 4\nelse:\n  # Body 5\na. Body 2\nb. Body 3\nc. Error\nMeal orders\nWrite a program that reads in a string, \"lunch\" or \"dinner\", representing the menu choice, and an\ninteger, 1, 2, or 3, representing the user's meal choice. The program then prints the user's meal choice.\nLunch Meal Options\n• 1: Caesar salad\n• 2: Spicy chicken wrap\n• 3: Butternut squash soup\nDinner Meal Options\n• 1: Baked salmon\n• 2: Turkey burger\n• 3: Mushroom risotto\nTRY IT\n108     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 108,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 770,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "7b24abacba9cdc3e76df28bc",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 119,
+    "text": "Ex: If the input is:\nlunch\n3\nThe output is:\nYour order: Butternut squash soup\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n4-6-nested-decisions)\n4.7 Conditional expressions\nLearning objectives\nBy the end of this section you should be able to\n• Identify the components of a conditional expression.\n• Create a conditional expression.\nConditional expressions\nA conditional expression (also known as a \"ternary operator\") is a simplified, single-line version of an\nif-else statement.\nConditional expression template:\nexpression_if_true if condition else expression_if_false\nA conditional expression is evaluated by first checking the condition. If condition is true,\nexpression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,\nexpression_if_false is evaluated, and the result is the resulting value of the conditional expression.\nA variable can be assigned with a conditional expression. Ex: Finding the max of two numbers can be\ncalculated with max_num = y if x < y else x\nNote: Conditional expressions have the lowest precedence of all Python operations.\nCHECKPOINT\nExample: Version check\nExample: Version check; ch 4, video 15 (https://www.openstax.org/r/version-check)\nCONCEPTS IN PRACTICE\nUsing conditional expressions\n1 . What is the conditional expression version of the following if-else statement?\nif",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 109,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1400,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "f7d5a382dce6cb9366226dc1",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 119,
+    "text": "heck; ch 4, video 15 (https://www.openstax.org/r/version-check)\nCONCEPTS IN PRACTICE\nUsing conditional expressions\n1 . What is the conditional expression version of the following if-else statement?\nif x%2 == 0:\n  response = 'even'",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 109,
+      "language": "en",
+      "char_start": 1200,
+      "char_end": 1430,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "a3483deb68fa733a77ebab2b",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 120,
+    "text": "else:\n  response = 'odd'\na. response = if x%2 == 0 \"even\" else \"odd\"\nb. response = \"odd\" if x%2 == 0 else \"even\"\nc. response = \"even\" if x%2 == 0 else \"odd\"\n2 . Given x = 100 and offset = 10, what is the value of result?\nresult = x + offset if x < 100 else x - offset\na. 90\nb. 100\nc. 110\n3 . Which part of the conditional expression is incorrect?\nmin_num = x if x < y else min_num = y\na. min_num = x\nb. x < y\nc. min_num = y\n4 . Which of the following is an improved version of the following if-else statement?\nif x < 50:\n  result = True\nelse:\n  result = False\na. result = True if x < 50 else False\nb. result = x < 50\n5 . What are the possible values of total?\ntotal = fee + 10 if hours > 12 else 2\na. 10, 2\nb. fee + 10, 2\nc. fee + 10, fee + 2\nPing values\nWrite a program that reads in an integer, ping, and prints ping_report, a string indicating whether the\nping is low to average or too high. ping values under 150 have a ping_report of \"low to average\".\nping values of 150 and higher have a ping_report of \"too high\". Use a conditional expression to assign\nping_report.\nEx: If the input is 30, the output is \"Ping is low to average\".\nTRY IT\n110     4 • Decisions",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Decisions",
+      "printed_page": 110,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1165,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "7de350ad96211d31a3379a46",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 126,
+    "text": "loop expression is evaluated again.\n• If true, the loop body will execute at least one more time (also called looping or iterating one more time).\n• If false, the loop's execution will terminate and the next statement after the loop body will execute.\nCHECKPOINT\nWhile loop\nWhile loop; ch 5, video 1 (https://www.openstax.org/r/while-loop)\nCONCEPTS IN PRACTICE\nWhile loop example\nFibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The\nFibonacci sequence starts with two ones: 1, 1, 2, 3, . . . . Consider the following code that prints all Fibonacci\nnumbers less than 20, and answer the following questions.\n# Initializing the first two Fibonacci numbers\nf = 1\ng = 1\nprint (f, end = ' ')\n# Running the loop while the last Fibonacci number is less than 20\nwhile g < 20:\n  print(g, end = ' ')\n  # Calculating the next Fibonacci number and updating the last two sequence numbers\n  temp = f\n  f = g\n  g = temp + g\n1 . How many times does the loop execute?\na. 5\nb. 6\nc. 7\n2 . What is the variable g's value when the while loop condition evaluates to False?\na. 13\nb. 20\nc. 21\n3 . What are the printed values in the output?\na. 1 1 2 3 5 8 13\nb. 1 2 3 5 8 13\nc. 1 1 2 3 5 8 13 21\nCounting with a while loop\nA while loop can be used to count up or down. A counter variable can be used in the loop expression to\n116     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 116,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1363,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "a90431b5753080f96d15d05c",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 127,
+    "text": "determine the number of iterations executed. Ex: A programmer may want to print all even numbers between\n1 and 20. The task can be done by using a counter initialized with 1. In each iteration, the counter's value is\nincreased by one, and a condition can check whether the counter's value is an even number or not. The\nchange in the counter's value in each iteration is called the step size. The step size can be any positive or\nnegative value. If the step size is a positive number, the counter counts in ascending order, and if the step size\nis a negative number, the counter counts in descending order.\nEXAMPLE 5.1\nA program printing all odd numbers between 1 and 10\n# Initialization\ncounter = 1\n# While loop condition\nwhile counter <= 10:\n  if counter % 2 == 1:\n    print(counter)\n  # Counting up and increasing counter's value by 1 in each iteration\n  counter += 1\nCHECKPOINT\nCounting with while loop\nCounting with while loop; ch 5, video 2 (https://www.openstax.org/r/counting-with-while-loop)\nCONCEPTS IN PRACTICE\nwhile loop counting examples\nGiven the code, answer the following questions.\nn = 4\nwhile n > 0:\n  print(n)\n  n = n - 1\nprint(\"value of n after the loop is\", n)\n4 . How many times does the loop execute?\na. 3\nb. 4\nc. 5\n5 . Which line is printed as the last line of output?",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 117,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1291,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "0d2ed8edb2aa2a56d3dbc350",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 128,
+    "text": "a. value of n after the loop is -1.\nb. value of n after the loop is 0.\nc. value of n after the loop is 1.\n6 . What happens if the code is changed as follows?\nn = 4\nwhile n > 0:\n  print(n)\n  # Modified line\n  n = n + 1\nprint(\"value of n after the loop is\", n)\na. The code will not run.\nb. The code will run for one additional iteration.\nc. The code will never terminate.\nReading inputs in a while loop\nWrite a program that takes user inputs in a while loop until the user enters \"begin\". Test the code with\nthe given input values to check that the loop does not terminate until the input is \"begin\". Once the input\n\"begin\" is received, print \"The while loop condition has been met.\".\nEnter different input words to see when the while loop condition is met.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/5-1-while-\nloop)\nSum of odd numbers\nWrite a program that reads two integer values, n1 and n2. Use a while loop to calculate the sum of odd\nnumbers between n1 and n2 (inclusive of n1 and n2). Remember, a number is odd if number % 2 != 0.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/5-1-while-\nloop)\n5.2 For loop\nLearning objectives\nBy the end of this section you should be able to\n• Explain the for loop construct.\n• Use a for loop to implement repeating tasks.\nTRY IT\nTRY IT\n118     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 118,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1386,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "a2a5bd831d07e50637ba7783",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 129,
+    "text": "For loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.\nCHECKPOINT\nFor loop example for iterating over a container object\nFor loop example for iterating over a container object; ch 5, video 3 (https://www.openstax.org/r/for-loop-\niterating)\nCONCEPTS IN PRACTICE\nFor loop over a string container\nA string variable can be considered a container of multiple characters, and hence can be iterated on. Given\nthe following code, answer the questions.\nstr_var = \"A string\"\ncount = 0\nfor c in str_var:\n  count += 1\nprint(count)\n1 . What is the program's output?\na. 7\nb. 8\nc. 9\n2 . What's the code's output if the line count += 1 is replaced with count *= 2?\na. 0\nb. 16\nc. 28\n3 . What is printed if the code is changed as follows?\nstr_var = \"A string\"\ncount = 0\nfor c in str_var:\n  count += 1\n  # New line\n  print(c, end = '*')\nprint(count)",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 119,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1104,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "a1259635e00062c68540d760",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 130,
+    "text": "a. A string*\nb. A*s*t*r*i*n*g*\nc. A* *s*t*r*i*n*g*\nRange() function in for loop\nA for loop can be used for iteration and counting. The range() function is a common approach for\nimplementing counting in a for loop. A range() function generates a sequence of integers between the two\nnumbers given a step size. This integer sequence is inclusive of the start and exclusive of the end of the\nsequence. The range() function can take up to three input values. Examples are provided in the table below.\nRange function Description Example Output\nrange(end)\n• Generates a sequence beginning at 0\nuntil end.\n• Step size: 1\nrange(4) 0, 1, 2, 3\nrange(start, end)\n• Generates a sequence beginning at\nstart until end.\n• Step size: 1\nrange(0, 3) 0, 1, 2\nrange(2, 6) 2, 3, 4, 5\nrange(-13,\n-9)\n-13, -12,\n-11, -10\nrange(start, end,\nstep)\n• Generates a sequence beginning at\nstart until end.\n• Step size: step\nrange(0, 4,\n1) 0, 1, 2, 3\nrange(1, 7,\n2) 1, 3, 5\nrange(3,\n-2, -1)\n3, 2, 1, 0,\n-1\nrange(10,\n0, -4) 10, 6, 2\nTable 5.1 Using the range() function.\n120     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 120,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1054,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "83d73536d3c4cbd3f0380540",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 131,
+    "text": "EXAMPLE 5.2\nTwo programs printing all integer multiples of 5 less than 50 (Notice the compactness of the for\nconstruction compared to the while)\n# For loop condition using\n# range() function to print\n# all multiples of 5 less than 50\nfor i in range(0, 50, 5):\n  print(i)\n# While loop implementation of printing\n# multiples of 5 less than 50\n# Initialization\ni = 0\n# Limiting the range to be less than 50\nwhile i < 50:\n    print(i)\n    i+=5\nTable 5.2\nCONCEPTS IN PRACTICE\nFor loop using a range() function\n4 . What are the arguments to the range() function for the increasing sequence of every 3rd integer from\n10 to 22 (inclusive of both ends)?\na. range(10, 23, 3)\nb. range(10, 22, 3)\nc. range(22, 10, -3)\n5 . What are the arguments to the range() function for the decreasing sequence of every integer from 5\nto 1 (inclusive of both ends)?\na. range(5, 1, 1)\nb. range(5, 1, -1)\nc. range(5, 0, -1)\n6 . What is the sequence generated from range(-1, -2, -1)?\na. 1\nb. -1, -2\nc. -2\n7 . What is the output of the range(1, 2, -1)?\na. 1\nb. 1, 2\nc. empty sequence\n8 . What is the output of range(5, 2)?\na. 0, 2, 4\nb. 2, 3, 4",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 121,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1114,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "3aa5df35a038fd9aec1da103",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 132,
+    "text": "c. empty sequence\nCounting spaces\nWrite a program using a for loop that takes in a string as input and counts the number of spaces in the\nprovided string. The program must print the number of spaces counted. Ex: If the input is \"Hi everyone\",\nthe program outputs 1.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/5-2-for-\nloop)\nSequences\nWrite a program that reads two integer values, n1 and n2, with n1 < n2, and performs the following tasks:\n1. Prints all even numbers between the two provided numbers (inclusive of both), in ascending order.\n2. Prints all odd numbers between the two provided numbers (exclusive of both), in descending order.\nInput: 2 8\nPrints:\n2 4 6 8\n7 5 3\nNote: the program should return an error message if the second number is smaller than the first.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/5-2-for-\nloop)\n5.3 Nested loops\nLearning objectives\nBy the end of this section you should be able to\n• Implement nested while loops.\n• Implement nested for loops.\nNested loops\nA nested loop has one or more loops within the body of another loop. The two loops are referred to as outer\nloop and inner loop. The outer loop controls the number of the inner loop's full execution. More than one\ninner loop can exist in a nested loop.\nTRY IT\nTRY IT\n122     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 122,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1371,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "d840a7c396893719d3b47d4e",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 133,
+    "text": "CHECKPOINT\nNested while loops\nNested while loops; ch 5, video 5 (https://www.openstax.org/r/nested-while-loops)\nEXAMPLE 5.3\nAvailable appointments\nConsider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available\nappointments can use a nested for loop where the outer loop iterates over the hours, and the inner loop\niterates over the minutes. This example prints time in hours and minutes in the range between 8:00am and\n10:00am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the\ninner loop iterates over the time's minute portion between 0 and 59.\nhour = 8\nminute = 0\nwhile hour <= 9:\n  while minute <= 59:\n    print(hour, \":\", minute)\n    minute += 30\n  hour += 1\n  minute = 0\nThe above code's output is:\n8 : 0\n8 : 30\n9 : 0\n9 : 30\nCONCEPTS IN PRACTICE\nNested while loop question set\n1 . Given the following code, how many times does the print statement execute?\ni = 1\nwhile i <= 5:\n  j = 1\n  while i + j <= 5:\n    print(i, j)\n    j += 1\n  i += 1",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 123,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1030,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "7c76e69786ea48c63294a0c1",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 134,
+    "text": "a. 5\nb. 10\nc. 25\n2 . What is the output of the following code?\ni = 1\nwhile i <= 2:\n  j = 1\n  while j <= 3:\n    print('*', end = '')\n    j += 1\n  print()\n  i += 1\na. ******\nb. ***\n***\nc. **\n**\n**\n3 . Which program prints the following output?\n1 2 3 4\n2 4 6 8\n3 6 9 12\n4 8 12 16\na. i = 1\nwhile i <= 4:\n  while j <= 4:\n    print(i * j, end = ' ')\n    j += 1\n  print()\n  i += 1\nb. i = 1\nwhile i <= 4:\n  j = 1\n  while j <= 4:\n    print(i * j, end = ' ')\n    j += 1\n  print()\n  i += 1\nc. i = 1\nwhile i <= 4:\n  j = 1\n  while j <= 4:\n    print(i * j, end = ' ')\n124     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 124,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 571,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "3042289a470657ed32633399",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 135,
+    "text": "j += 1\n  i += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.\nCHECKPOINT\nNested for loops\nNested for loops; ch 5, video 4 (https://www.openstax.org/r/nested-for-loops)\nCONCEPTS IN PRACTICE\nNested loop practices\n4 . Given the following code, how many times does the outer loop execute?\nfor i in range(3):\n  for j in range(4):\n    print(i, ' ', j)\na. 3\nb. 4\nc. 12\n5 . Given the following code, how many times does the inner loop execute?\nfor i in range(3):\n  for j in range(4):\n    print(i, ' ', j)\na. 4\nb. 12\nc. 20\n6 . Which program prints the following output?\n0 1 2 3\n0 2 4 6\n0 3 6 9\na. for i in range(4):\n  for j in range(4):\n    print(i * j, end = ' ')\n  print()",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 125,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1064,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "685aa1656a2bcd77bed93110",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 136,
+    "text": "b. for i in range(1, 4):\n  for j in range(4):\n    print(i * j)\nc. for i in range(1, 4):\n  for j in range(4):\n    print(i * j, end = ' ')\n  print()\nMIXED LOOPS\nThe two for and while loop constructs can also be mixed in a nested loop construct. Ex: Printing even\nnumbers less than a given number in a list. The outer loop can be implemented using a for loop iterating\nover the provided list, and the inner loop iterates over all even numbers less than a given number from the\nlist using a while loop.\nnumbers = [12, 5, 3]\ni = 0\nfor n in numbers:\n  while i < n:\n    print (i, end = \" \")\n    i += 2\n  i = 0\n  print()\nPrinting a triangle of numbers\nWrite a program that prints the following output:\n1 2 3 4 5 6 7 8 9\n1 2 3 4 5 6 7 8\n1 2 3 4 5 6 7\n1 2 3 4 5 6\n1 2 3 4 5\n1 2 3 4\n1 2 3\n1 2\n1\nFinish!\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n5-3-nested-loops)\nTRY IT\n126     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 126,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 926,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "18befe3eafcfc94506f01e2e",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 137,
+    "text": "Printing two triangles\nWrite a program that prints the following output using nested while and for loops:\n****\n***\n**\n*\n++++\n+++\n++\n+\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n5-3-nested-loops)\n5.4 Break and continue\nLearning objectives\nBy the end of this section you should be able to\n• Analyze a loop's execution with break and continue statements.\n• Use break and continue control statements in while and for loops.\nBreak\nA break statement is used within a for or a while loop to allow the program execution to exit the loop once a\ngiven condition is triggered. A break statement can be used to improve runtime efficiency when further loop\nexecution is not required.\nEx: A loop that looks for the character \"a\" in a given string called user_string. The loop below is a regular\nfor loop for going through all the characters of user_string. If the character is found, the break statement\ntakes execution out of the for loop. Since the task has been accomplished, the rest of the for loop execution\nis bypassed.\nuser_string = \"This is a string.\"\nfor i in range(len(user_string)):\n  if user_string[i] == 'a':\n    print(\"Found at index:\", i)\n    break\nCHECKPOINT\nBreak statement in a while loop\nBreak statement in a while loop; ch 5, video 6 (https://www.openstax.org/r/while-break)\nTRY IT",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 127,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1337,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "21638cd9f449c01df70059c8",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 138,
+    "text": "INFINITE LOOP\nA break statement is an essential part of a loop that does not have a termination condition. A loop without\na termination condition is known as an infinite loop. Ex: An infinite loop that counts up starting from 1 and\nprints the counter's value while the counter's value is less than 10. A break condition is triggered when the\ncounter's value is equal to 10, and hence the program execution exits.\ncounter = 1\nwhile True:\n  if counter >= 10:\n    break\n  print(counter)\n  counter += 1\nCONCEPTS IN PRACTICE\nUsing a break statement\n1 . What is the following code's output?\nstring_val = \"Hello World\"\nfor c in string_val:\n  if c == \" \":\n    break\n  print(c)\na. Hello\nb. Hello World\nc. H\ne\nl\nl\no\n2 . Given the following code, how many times does the print statement get executed?\ni = 1\nwhile True:\n  if i%3 == 0 and i%5 == 0:\n    print(i)\n    break\n  i += 1\na. 0\nb. 1\nc. 15\n3 . What is the final value of i?\n128     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 128,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 935,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "8c63677c0885598d88c12177",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 139,
+    "text": "i = 1\ncount = 0\nwhile True:\n  if i%2 == 0 or i%3 == 0:\n    count += 1\n  if count >= 5:\n    print(i)\n    break\n  i += 1\na. 5\nb. 8\nc. 30\nContinue\nA continue statement allows for skipping the execution of the remainder of the loop without exiting the loop\nentirely. A continue statement can be used in a for or a while loop. After the continue statement's\nexecution, the loop expression will be evaluated again and the loop will continue from the loop's expression. A\ncontinue statement facilitates the loop's control and readability.\nCHECKPOINT\nContinue statement in a while loop\nControl statement in a while loop; ch 5, video 7 (https://www.openstax.org/r/while-control)\nCONCEPTS IN PRACTICE\nUsing a continue statement\n4 . Given the following code, how many times does the print statement get executed?\ni = 10\nwhile i >= 0:\n  i -= 1\n  if i%3 != 0:\n    continue\n  print(i)\na. 3\nb. 4\nc. 11\n5 . What is the following code's output?\nfor c in \"hi Ali\":\n  if c == \" \":",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 129,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 961,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "9ef75ac76bbaa38aebf2f502",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 140,
+    "text": "continue\n  print(c)\na. h\ni\nA\nl\ni\nb. h\ni\nA\nl\ni\nc. hi\nAli\nUsing break control statement in a loop\nWrite a program that reads a string value and prints \"Found\" if the string contains a space character. Else,\nprints \"Not found\".\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n5-4-break-and-continue)\nUsing a continue statement in a loop\nComplete the following code so that the program calculates the sum of all the numbers in list my_list that\nare greater than or equal to 5.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n5-4-break-and-continue)\n5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\nTRY IT\nTRY IT\n130     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 130,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1025,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "fb47956ac0217c024fb2f12f",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 141,
+    "text": "statement. A loop else is used to identify if the loop is terminated normally or the execution is interrupted by\na break statement.\nEx: A for loop that iterates over a list of numbers to find if the value 10 is in the list. In each iteration, if 10 is\nobserved, the statement \"Found 10!\" is printed and the execution can terminate using a break statement. If\n10 is not in the list, the loop terminates when all integers in the list are evaluated, and hence the else\nstatement will run and print \"10 is not in the list.\" Alternatively, a Boolean variable can be used to\ntrack whether number 10 is found after loop's execution terminates.\nEXAMPLE 5.4\nFinding the number 10 in a list\nIn the code examples below, the code on the left prints \"Found 10!\" if the variable i's value is 10. If the\nvalue 10 is not in the list, the code prints \"10 is not in the list.\". The code on the right uses the\nseen Boolean variable to track if the value 10 is in the list. After loop's execution, if seen's value is still false,\nthe code prints \"10 is not in the list.\".\nnumbers = [2, 5, 7, 11, 12]\nfor i in numbers:\n  if i == 10:\n    print(\"Found 10!\")\n    break\nelse:\n  print(\"10 is not in the list.\")\nnumbers = [2, 5, 7, 11, 12]\nseen = False\nfor i in numbers:\n  if i == 10:\n    print(\"Found 10!\")\n    seen = True\nif seen == False:\n  print(\"10 is not in the list.\")\nTable 5.3\nCHECKPOINT\nLoop else template\nLoop else t",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 131,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1400,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "3b4cf68a59634b76616724e2",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 141,
+    "text": ", 7, 11, 12]\nseen = False\nfor i in numbers:\n  if i == 10:\n    print(\"Found 10!\")\n    seen = True\nif seen == False:\n  print(\"10 is not in the list.\")\nTable 5.3\nCHECKPOINT\nLoop else template\nLoop else template; ch 5, video 8 (https://www.openstax.org/r/loop-else)\nCONCEPTS IN PRACTICE\nLoop else practices\n1 . What is the output?\nn = 16\nexp = 0\ni = n\nwhile i > 1:",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 131,
+      "language": "en",
+      "char_start": 1200,
+      "char_end": 1560,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "ae4a50238404149d47e97b47",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 142,
+    "text": "if n%2 == 0:\n    i = i/2\n    exp += 1\n  else:\n    break\nelse:\n  print(n,\"is 2 to the\", exp)\na. 16 is 2 to the 3\nb. 16 is 2 to the 4\nc. no output\n2 . What is the output?\nn = 7\nexp = 0\ni = n\nwhile i > 1:\n  if n%2 == 0:\n    i = i//2\n    exp += 1\n  else:\n    break\nelse:\n  print(n,\"is 2 to the\", exp)\na. no output\nb. 7 is 2 to the 3\nc. 7 is 2 to the 2\n3 . What is the output?\nnumbers = [1, 2, 2, 6]\nfor i in numbers:\n  if i >= 5:\n    print(\"Not all numbers are less than 5.\")\n    break\n  else:\n    print(i)\n    continue\nelse:\n  print(\"all numbers are less than 5.\")\na. 1\n2\n2\n6\nNot all numbers are less than 5.\nb. 1\n2\n132     5 • Loops",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 132,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 630,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "4053e412438d17439f34f5e7",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 143,
+    "text": "2\nNot all numbers are less than 5.\nc. 1\n2\n2\n6\nall numbers are less than 5.\nSum of values less than 10\nWrite a program that, given a list, calculates the sum of all integer values less than 10. If a value greater\nthan or equal to 10 is in the list, no output should be printed. Test the code for different values in the list.\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/5-5-loop-\nelse)\n5.6 Chapter summary\nHighlights from this chapter include:\n• A while loop runs a set of statements, known as the loop body, while a given condition, known as the\nloop expression, is true.\n• A for loop can be used to iterate over elements of a container object.\n• A range() function generates a sequence of integers between the two numbers given a step size.\n• A nested loop has one or more loops within the body of another loop.\n• A break statement is used within a for or a while loop to allow the program execution to exit the loop\nonce a given condition is triggered.\n• A continue statement allows for skipping the execution of the remainder of the loop without exiting the\nloop entirely.\n• A loop else statement runs after the loop's execution is completed without being interrupted by a break\nstatement.\nAt this point, you should be able to write programs with loop constructs. The programming practice below ties\ntogether most topics presented in the chapter.\nFun",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 133,
+      "language": "en",
+      "char_start": 0,
+      "char_end": 1400,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  },
+  {
+    "chunk_id": "e2d911c610d4139aaf67df16",
+    "document_id": "openstax-python-2026",
+    "source": "https://openstax.org/details/books/introduction-python-programming",
+    "page": 143,
+    "text": "being interrupted by a break\nstatement.\nAt this point, you should be able to write programs with loop constructs. The programming practice below ties\ntogether most topics presented in the chapter.\nFunction Description\nrange(end) Generates a sequence beginning at 0 until end with step size of 1.\nrange(start, end) Generates a sequence beginning at start until end with step size of 1.\nrange(start, end, s) Generates a sequence beginning at start until end with the step size of s.\nTable 5.4 Chapter 5 reference.\nTRY IT",
+    "metadata": {
+      "extraction_status": "ok",
+      "chapter": "Loops",
+      "printed_page": 133,
+      "language": "en",
+      "char_start": 1200,
+      "char_end": 1718,
+      "chunk_method": "fixed",
+      "attribution": "Access for free at openstax.org"
+    }
+  }
+]

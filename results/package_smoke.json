@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-13T12:15:15.489167+00:00",
+  "archive_sha256": "165957ab445124e7378ffc034a9bb34509efb9cbf9ca9dee65bf68bc6f743ced",
+  "manifest_hashes": "pass",
+  "extracted_source_ui": "pass",
+  "no_env_or_vector_cache": true,
+  "chat_disabled_without_index": true,
+  "saved_results_viewable": true,
+  "offline_source_metric_checks": "pass",
+  "limitation": "Extracted package tested using the existing Python environment, not a fresh dependency installation or another physical machine. Archive is rebuilt afterward to include this verification record."
+}

@@ -1,0 +1,8 @@
+# Direct dependency versions observed on Python 3.14.5 / Windows. Transitive dependencies resolved by pip.
+openai==2.36.0
+python-dotenv==1.2.2
+pypdf==6.11.0
+chromadb==1.5.9
+streamlit==1.58.0
+pandas==3.0.3
+tiktoken==0.12.0

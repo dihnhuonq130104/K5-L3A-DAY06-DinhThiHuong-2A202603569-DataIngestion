@@ -1,0 +1,28 @@
+{"at": "2026-11-13T10:29:57.462711+00:00", "stage": "ingest", "embedding_tokens": 28683, "embedding_estimated_usd": 0.0005736599999999999}
+{"at": "2026-11-13T10:37:55.434850+00:00", "stage": "ingest", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T10:37:56.498120+00:00", "stage": "benchmark", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T10:38:38.095848+00:00", "stage": "demo_retrieval", "embedding_tokens": 27, "embedding_estimated_usd": 5.4e-07}
+{"at": "2026-11-13T10:38:46.840852+00:00", "stage": "demo_chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 940, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 385, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1325}}
+{"at": "2026-11-13T10:40:45.369330+00:00", "stage": "demo_retrieval", "embedding_tokens": 31, "embedding_estimated_usd": 6.2e-07}
+{"at": "2026-11-13T10:40:49.933892+00:00", "stage": "demo_chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 1046, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 161, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1207}}
+{"at": "2026-11-13T11:01:48.024186+00:00", "stage": "demo_retrieval", "embedding_tokens": 9, "embedding_estimated_usd": 1.8e-07}
+{"at": "2026-11-13T11:01:56.937870+00:00", "stage": "demo_chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 854, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 382, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1236}}
+{"at": "2026-11-13T11:06:16.453052+00:00", "stage": "demo_retrieval", "embedding_tokens": 11, "embedding_estimated_usd": 2.2e-07}
+{"at": "2026-11-13T11:06:21.771987+00:00", "stage": "demo_chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 944, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 294, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1238}}
+{"at": "2026-11-13T11:06:36.728484+00:00", "stage": "demo_retrieval", "embedding_tokens": 12, "embedding_estimated_usd": 2.4e-07}
+{"at": "2026-11-13T11:06:44.862193+00:00", "stage": "demo_chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 945, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 379, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1324}}
+{"at": "2026-11-13T11:20:16.495299+00:00", "stage": "demo_retrieval", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T11:20:24.102950+00:00", "stage": "demo_chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 944, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 402, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1346}}
+{"at": "2026-11-13T11:26:24.849393+00:00", "stage": "improvement_dev_selection", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T11:27:49.699607+00:00", "stage": "improvement_new_test", "embedding_tokens": 290, "embedding_estimated_usd": 5.7999999999999995e-06}
+{"at": "2026-11-13T11:30:17.126198+00:00", "stage": "demo_retrieval", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T11:30:21.473278+00:00", "stage": "demo_chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 1342, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 41, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1383}, "citation_check": "passed"}
+{"at": "2026-11-13T11:33:16.395046+00:00", "stage": "improvement_replay", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T11:43:22.925106+00:00", "stage": "abc_v2_dev_and_ingest", "embedding_tokens": 41634, "embedding_estimated_usd": 0.00083268}
+{"at": "2026-11-13T11:46:02.897032+00:00", "stage": "english_dev_and_ingest", "embedding_tokens": 238, "embedding_estimated_usd": 4.76e-06}
+{"at": "2026-11-13T11:46:22.445038+00:00", "stage": "english_new_test", "embedding_tokens": 195, "embedding_estimated_usd": 3.9e-06}
+{"at": "2026-11-13T11:51:39.435128+00:00", "stage": "qualitative_assessment", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 57353, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 2707, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 60060}}
+{"at": "2026-11-13T11:54:08.770394+00:00", "stage": "rebuild_selected_indices", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T11:54:09.755103+00:00", "stage": "benchmark_reproduction", "embedding_tokens": 0, "embedding_estimated_usd": 0.0}
+{"at": "2026-11-13T11:58:04.428250+00:00", "stage": "chat_retrieval", "embedding_tokens": 18, "embedding_estimated_usd": 3.6e-07}
+{"at": "2026-11-13T11:58:08.677041+00:00", "stage": "chat", "embedding_tokens": 0, "embedding_estimated_usd": 0.0, "chat_model": "gpt-5.4", "chat_usage": {"input_tokens": 1233, "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}, "output_tokens": 111, "output_tokens_details": {"reasoning_tokens": 0}, "total_tokens": 1344}, "citation_check": "passed"}

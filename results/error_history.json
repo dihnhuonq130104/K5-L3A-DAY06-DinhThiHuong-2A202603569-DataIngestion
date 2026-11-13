@@ -1,0 +1,37 @@
+{
+  "method": "Observed setup/development failures summarized without secrets or invented per-error timestamps. last_error.json retains final failed-run timestamp; this history records subsequent resolutions.",
+  "events": [
+    {
+      "stage": "initial API attempt",
+      "type": "AuthenticationError",
+      "status_code": 401,
+      "provider_code": "expired_secret_key",
+      "resolution": "User replaced key; subsequent real embeddings and GPT-5.4 calls succeeded."
+    },
+    {
+      "stage": "initial Chroma retrieval",
+      "type": "InternalError",
+      "message": "HNSW segment reader: Nothing found on disk",
+      "resolution": "Persistent client retained; HNSW batch/sync thresholds set to 10; re-upserted from API embedding cache; full dev/test benchmark then passed."
+    },
+    {
+      "stage": "dev aggregation during implementation",
+      "type": "TypeError",
+      "message": "Empty test rows had None metric during dev-only ranking",
+      "resolution": "Rank dev rows only. Correct selection saved before test."
+    },
+    {
+      "stage": "supplementary question embeddings",
+      "type": "APIConnectionError",
+      "message": "Sandbox network connection refused before embeddings returned.",
+      "resolution": "Reran approved command outside sandbox; 10 real query embeddings returned, 290 tokens; first test retrieval then completed."
+    },
+    {
+      "stage": "Windows test execution in sandbox",
+      "type": "PermissionError",
+      "message": "Chroma/Streamlit temporary-directory access restricted by sandbox.",
+      "resolution": "Approved execution outside sandbox passed 12/12 tests and extracted-package smoke check."
+    }
+  ],
+  "current_status": "Recovered; real benchmark and chatbot succeeded."
+}

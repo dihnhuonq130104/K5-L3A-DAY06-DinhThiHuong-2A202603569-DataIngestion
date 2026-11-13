@@ -1,0 +1,137 @@
+{
+  "selected_at": "2026-11-13T11:46:02.896013+00:00",
+  "plan_sha256": "b84d2d951e545243fb0a9cc561e9b3b00c8817f515604b6940314d893a025a49",
+  "size": 1800,
+  "selected_strategy": "B",
+  "collections": {
+    "A": "python-en-a-1800-f9b1d2fb56",
+    "B": "python-en-b-1800-f9b1d2fb56",
+    "C": "python-en-b-1800-f9b1d2fb56"
+  },
+  "profiles": [
+    {
+      "size": 1000,
+      "metrics": [
+        {
+          "strategy": "A",
+          "n": 15,
+          "hit1_n": 4,
+          "hit3_n": 7,
+          "chunks": 73
+        },
+        {
+          "strategy": "B",
+          "n": 15,
+          "hit1_n": 8,
+          "hit3_n": 12,
+          "chunks": 79
+        },
+        {
+          "strategy": "C",
+          "n": 15,
+          "hit1_n": 8,
+          "hit3_n": 12,
+          "chunks": 79
+        }
+      ],
+      "collections": {
+        "A": "python-en-a-1000-f9b1d2fb56",
+        "B": "python-en-b-1000-f9b1d2fb56",
+        "C": "python-en-b-1000-f9b1d2fb56"
+      },
+      "total_hit3": 31,
+      "total_hit1": 20
+    },
+    {
+      "size": 1400,
+      "metrics": [
+        {
+          "strategy": "A",
+          "n": 15,
+          "hit1_n": 6,
+          "hit3_n": 10,
+          "chunks": 48
+        },
+        {
+          "strategy": "B",
+          "n": 15,
+          "hit1_n": 7,
+          "hit3_n": 13,
+          "chunks": 54
+        },
+        {
+          "strategy": "C",
+          "n": 15,
+          "hit1_n": 7,
+          "hit3_n": 13,
+          "chunks": 54
+        }
+      ],
+      "collections": {
+        "A": "python-en-a-1400-f9b1d2fb56",
+        "B": "python-en-b-1400-f9b1d2fb56",
+        "C": "python-en-b-1400-f9b1d2fb56"
+      },
+      "total_hit3": 36,
+      "total_hit1": 20
+    },
+    {
+      "size": 1800,
+      "metrics": [
+        {
+          "strategy": "A",
+          "n": 15,
+          "hit1_n": 7,
+          "hit3_n": 10,
+          "chunks": 44
+        },
+        {
+          "strategy": "B",
+          "n": 15,
+          "hit1_n": 7,
+          "hit3_n": 13,
+          "chunks": 53
+        },
+        {
+          "strategy": "C",
+          "n": 15,
+          "hit1_n": 7,
+          "hit3_n": 13,
+          "chunks": 53
+        }
+      ],
+      "collections": {
+        "A": "python-en-a-1800-f9b1d2fb56",
+        "B": "python-en-b-1800-f9b1d2fb56",
+        "C": "python-en-b-1800-f9b1d2fb56"
+      },
+      "total_hit3": 36,
+      "total_hit1": 21
+    }
+  ],
+  "dev_metrics": [
+    {
+      "strategy": "A",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 10,
+      "chunks": 44
+    },
+    {
+      "strategy": "B",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 13,
+      "chunks": 53
+    },
+    {
+      "strategy": "C",
+      "n": 15,
+      "hit1_n": 7,
+      "hit3_n": 13,
+      "chunks": 53
+    }
+  ],
+  "test_not_yet_retrieved": true,
+  "api_tokens_this_run": 238
+}

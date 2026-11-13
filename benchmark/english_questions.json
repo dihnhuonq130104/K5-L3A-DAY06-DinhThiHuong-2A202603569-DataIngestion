@@ -1,0 +1,296 @@
+[
+  {
+    "id": "dev01",
+    "split": "dev",
+    "question": "How do zero, an empty string, a nonzero number and a nonempty string convert to bool?",
+    "expected_answer": "Zero and an empty string are False; nonzero numbers and nonempty strings are True.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 97,
+    "evidence_quote": "bool() converts a value to a Boolean value, True or False. • True: any non-zero number, any non-empty string • False: 0, empty string",
+    "filter": null,
+    "type": "paraphrase",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev02",
+    "split": "dev",
+    "question": "Which Python operators test equality and inequality?",
+    "expected_answer": "== tests equality; != tests inequality.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 98,
+    "evidence_quote": "• equal to: == • not equal to: !=",
+    "filter": null,
+    "type": "direct",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev03",
+    "split": "dev",
+    "question": "How must an if body be indented, and what happens if its body is empty?",
+    "expected_answer": "Indent one level; PEP 8 recommends four spaces. An empty body causes an error.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 100,
+    "evidence_quote": "The if statement's body must be grouped together and have one level of indentation. The PEP 8 style guide recommends four spaces per indentation level. The Python interpreter will produce an error if the body is empty.",
+    "filter": null,
+    "type": "condition",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev04",
+    "split": "dev",
+    "question": "In Decisions, how many condition operands does and take, and when is its result True?",
+    "expected_answer": "Two operands; True only when both conditions are true.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 104,
+    "evidence_quote": "The and operator takes two condition operands and returns True if both conditions are true.",
+    "filter": {
+      "chapter": "Decisions"
+    },
+    "type": "filter",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev05",
+    "split": "dev",
+    "question": "How does not transform a Boolean, and what can it be used for?",
+    "expected_answer": "It reverses True/False and can toggle a Boolean or improve readability.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 106,
+    "evidence_quote": "The not operator takes one condition operand and returns True when the operand is false and returns False when the operand is true.",
+    "filter": null,
+    "type": "paraphrase",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev06",
+    "split": "dev",
+    "question": "Why is 1 + 2 * 3 equal to 7, but (1 + 2) * 3 equal to 9?",
+    "expected_answer": "Multiplication precedes addition; parentheses override that order.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 108,
+    "evidence_quote": "Ex: 1 + 2 * 3 is 7 because multiplication takes precedence over addition. However, (1 + 2) * 3 is 9 because parentheses take precedence over multiplication.",
+    "filter": null,
+    "type": "direct",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev07",
+    "split": "dev",
+    "question": "Besides changing evaluation order, how do parentheses help a reader?",
+    "expected_answer": "They reduce confusion.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 110,
+    "evidence_quote": "Parentheses not only assert a different order of operations but also reduce confusion.",
+    "filter": null,
+    "type": "paraphrase",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev08",
+    "split": "dev",
+    "question": "When is an elif condition checked, and which statement must it follow?",
+    "expected_answer": "When the previous condition is false; it follows if or elif.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 111,
+    "evidence_quote": "An elif (short for else if) statement checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement.",
+    "filter": null,
+    "type": "condition",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev09",
+    "split": "dev",
+    "question": "What is a nested decision, and how is it indicated in Python?",
+    "expected_answer": "A decision inside another decision, indicated by indentation.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 116,
+    "evidence_quote": "Nesting allows a decision statement to be inside another decision statement, and is indicated by an indentation level.",
+    "filter": null,
+    "type": "direct",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev10",
+    "split": "dev",
+    "question": "What is another name for a conditional expression, and what is its general syntax?",
+    "expected_answer": "Ternary operator: expression_if_true if condition else expression_if_false.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 119,
+    "evidence_quote": "A conditional expression (also known as a \"ternary operator\") is a simplified, single-line version of an if-else statement. Conditional expression template: expression_if_true if condition else expression_if_false",
+    "filter": null,
+    "type": "direct",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev11",
+    "split": "dev",
+    "question": "How do positive and negative step sizes affect a loop counter?",
+    "expected_answer": "Positive counts upward; negative counts downward.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 127,
+    "evidence_quote": "If the step size is a positive number, the counter counts in ascending order, and if the step size is a negative number, the counter counts in descending order.",
+    "filter": null,
+    "type": "paraphrase",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev12",
+    "split": "dev",
+    "question": "Which types of containers can a for loop iterate over according to the book?",
+    "expected_answer": "A range of numbers, a string of characters, or a list of values.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 129,
+    "evidence_quote": "In Python, a container can be a range of numbers, a string of characters, or a list of values.",
+    "filter": null,
+    "type": "direct",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev13",
+    "split": "dev",
+    "question": "In Loops, does a range include its start and its end?",
+    "expected_answer": "It includes the start and excludes the end.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 130,
+    "evidence_quote": "This integer sequence is inclusive of the start and exclusive of the end of the sequence.",
+    "filter": {
+      "chapter": "Loops"
+    },
+    "type": "filter",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev14",
+    "split": "dev",
+    "question": "In nested loops, what does the outer loop control about the inner loop?",
+    "expected_answer": "The number of complete executions of the inner loop.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 132,
+    "evidence_quote": "The outer loop controls the number of the inner loop's full execution.",
+    "filter": null,
+    "type": "direct",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "dev15",
+    "split": "dev",
+    "question": "In Loops, which loop types support break, and what does break do?",
+    "expected_answer": "for and while; it exits the loop when the triggering condition is reached.",
+    "gold_source_id": "openstax-python-2026",
+    "gold_page": 137,
+    "evidence_quote": "A break statement is used within a for or a while loop to allow the program execution to exit the loop once a given condition is triggered.",
+    "filter": {
+      "chapter": "Loops"
+    },
+    "type": "filter",
+    "evidence_verified_by": "AI-assisted author inspection + normalized substring validation; student review pending"
+  },
+  {
+    "id": "test01",
+    "split": "test",
+    "question": "According to PEP 8 in Decisions, how many spaces should an if body be indented?",
+    "expected_answer": "Four spaces per indentation level.",
+    "gold_page": 100,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "The PEP 8 style guide\nrecommends four spaces per indentation level.",
+    "filter": {
+      "chapter": "Decisions"
+    }
+  },
+  {
+    "id": "test02",
+    "split": "test",
+    "question": "How is else indented relative to its matching if?",
+    "expected_answer": "At the same indentation level; the else body is indented.",
+    "gold_page": 102,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "Note: The else statement is at the\nsame level of indentation as the if statement, and the body is indented.",
+    "filter": null
+  },
+  {
+    "id": "test03",
+    "split": "test",
+    "question": "If is_on is initially True, what does is_on = not is_on change it to?",
+    "expected_answer": "False; not toggles the Boolean value.",
+    "gold_page": 106,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "not is a useful operator that can make a condition more readable and can be used to toggle a Boolean's value.\nEx: is_on = not is_on.",
+    "filter": null
+  },
+  {
+    "id": "test04",
+    "split": "test",
+    "question": "In Decisions, does PEP 8 recommend spaces immediately inside parentheses?",
+    "expected_answer": "No. Avoid spaces immediately inside parentheses.",
+    "gold_page": 110,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "• Avoid spaces immediately inside parentheses.\nAvoid: x = ( 4 * y )\nBetter: x = (4 * y)",
+    "filter": {
+      "chapter": "Decisions"
+    }
+  },
+  {
+    "id": "test05",
+    "split": "test",
+    "question": "With x=100 and offset=10, what is result = x + offset if x < 100 else x - offset?",
+    "expected_answer": "90 because x < 100 is false.",
+    "gold_page": 120,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "Given x = 100 and offset = 10, what is the value of result?\nresult = x + offset if x < 100 else x - offset",
+    "filter": null
+  },
+  {
+    "id": "test06",
+    "split": "test",
+    "question": "In Loops, does a negative step size make a counter ascend or descend?",
+    "expected_answer": "Descend.",
+    "gold_page": 127,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "if the step size\nis a negative number, the counter counts in descending order.",
+    "filter": {
+      "chapter": "Loops"
+    }
+  },
+  {
+    "id": "test07",
+    "split": "test",
+    "question": "Which range arguments generate every integer from 5 down to 1, including 1?",
+    "expected_answer": "range(5, 0, -1).",
+    "gold_page": 131,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "What are the arguments to the range() function for the decreasing sequence of every integer from 5\nto 1 (inclusive of both ends)?\na. range(5, 1, 1)\nb. range(5, 1, -1)\nc. range(5, 0, -1)",
+    "filter": null
+  },
+  {
+    "id": "test08",
+    "split": "test",
+    "question": "Which appointment times does the 30-minute example from 8:00 until before 10:00 print?",
+    "expected_answer": "8:00, 8:30, 9:00 and 9:30.",
+    "gold_page": 133,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "The above code's output is:\n8 : 0\n8 : 30\n9 : 0\n9 : 30",
+    "filter": null
+  },
+  {
+    "id": "test09",
+    "split": "test",
+    "question": "In Loops, may a while loop be nested inside a for loop?",
+    "expected_answer": "Yes. The book gives a mixed nested-loop example.",
+    "gold_page": 136,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "The two for and while loop constructs can also be mixed in a nested loop construct.",
+    "filter": {
+      "chapter": "Loops"
+    }
+  },
+  {
+    "id": "test10",
+    "split": "test",
+    "question": "For numbers = [1, 2, 2, 6], what does the example print when i >= 5, and does loop else run?",
+    "expected_answer": "It prints Not all numbers are less than 5., then breaks. Loop else does not run.",
+    "gold_page": 142,
+    "gold_source_id": "openstax-python-2026",
+    "evidence_quote": "numbers = [1, 2, 2, 6]\nfor i in numbers:\n  if i >= 5:\n    print(\"Not all numbers are less than 5.\")\n    break\n  else:\n    print(i)\n    continue\nelse:\n  print(\"all numbers are less than 5.\")",
+    "filter": null
+  }
+]

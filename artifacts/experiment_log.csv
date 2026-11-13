@@ -1,4 +1,4 @@
-strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+strategy,method,size,overlap,filter,model,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3
+A,fixed,1800,200,none,text-embedding-3-small,Overlap preserves evidence near boundaries,0.4666666666666667,0.6666666666666666,0.6,0.8
+B,section_sentence,1800,0,none,text-embedding-3-small,Section boundaries preserve coherent context,0.4666666666666667,0.8666666666666667,0.5,0.8
+C,section_sentence,1800,0,requested chapter,text-embedding-3-small,Chapter scope may reduce off-topic retrieval,0.4666666666666667,0.8666666666666667,0.5,0.8

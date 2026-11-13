@@ -1,0 +1,280 @@
+{
+  "source_id": "openstax-python-2026",
+  "title": "Introduction to Python Programming",
+  "source_path_or_url": "https://openstax.org/details/books/introduction-python-programming",
+  "local_path": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+  "license_or_permission": "CC BY-NC-SA 4.0; license statement on physical PDF page 4. Noncommercial educational use; retain attribution and share adaptations under same license.",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "attribution": "OpenStax, Rice University. Access for free at openstax.org.",
+  "accessed_at": "2026-11-13",
+  "snapshot_sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+  "physical_page_count": 397,
+  "counted_content_pages": 43,
+  "counting_rule": "Physical PDF pages 96-120 and 126-143 inclusive, 43 text-bearing teaching/exercise pages. Excludes chapter covers, front matter, blank p124, summaries and references. Printed page = PDF page - 10.",
+  "pages": [
+    {
+      "page": 96,
+      "printed_page": 86,
+      "chapter": "Decisions",
+      "characters": 1096
+    },
+    {
+      "page": 97,
+      "printed_page": 87,
+      "chapter": "Decisions",
+      "characters": 929
+    },
+    {
+      "page": 98,
+      "printed_page": 88,
+      "chapter": "Decisions",
+      "characters": 1148
+    },
+    {
+      "page": 99,
+      "printed_page": 89,
+      "chapter": "Decisions",
+      "characters": 730
+    },
+    {
+      "page": 100,
+      "printed_page": 90,
+      "chapter": "Decisions",
+      "characters": 1919
+    },
+    {
+      "page": 101,
+      "printed_page": 91,
+      "chapter": "Decisions",
+      "characters": 1097
+    },
+    {
+      "page": 102,
+      "printed_page": 92,
+      "chapter": "Decisions",
+      "characters": 1273
+    },
+    {
+      "page": 103,
+      "printed_page": 93,
+      "chapter": "Decisions",
+      "characters": 792
+    },
+    {
+      "page": 104,
+      "printed_page": 94,
+      "chapter": "Decisions",
+      "characters": 1344
+    },
+    {
+      "page": 105,
+      "printed_page": 95,
+      "chapter": "Decisions",
+      "characters": 961
+    },
+    {
+      "page": 106,
+      "printed_page": 96,
+      "chapter": "Decisions",
+      "characters": 980
+    },
+    {
+      "page": 107,
+      "printed_page": 97,
+      "chapter": "Decisions",
+      "characters": 964
+    },
+    {
+      "page": 108,
+      "printed_page": 98,
+      "chapter": "Decisions",
+      "characters": 1196
+    },
+    {
+      "page": 109,
+      "printed_page": 99,
+      "chapter": "Decisions",
+      "characters": 1271
+    },
+    {
+      "page": 110,
+      "printed_page": 100,
+      "chapter": "Decisions",
+      "characters": 1304
+    },
+    {
+      "page": 111,
+      "printed_page": 101,
+      "chapter": "Decisions",
+      "characters": 1498
+    },
+    {
+      "page": 112,
+      "printed_page": 102,
+      "chapter": "Decisions",
+      "characters": 807
+    },
+    {
+      "page": 113,
+      "printed_page": 103,
+      "chapter": "Decisions",
+      "characters": 1017
+    },
+    {
+      "page": 114,
+      "printed_page": 104,
+      "chapter": "Decisions",
+      "characters": 640
+    },
+    {
+      "page": 115,
+      "printed_page": 105,
+      "chapter": "Decisions",
+      "characters": 1004
+    },
+    {
+      "page": 116,
+      "printed_page": 106,
+      "chapter": "Decisions",
+      "characters": 1360
+    },
+    {
+      "page": 117,
+      "printed_page": 107,
+      "chapter": "Decisions",
+      "characters": 1089
+    },
+    {
+      "page": 118,
+      "printed_page": 108,
+      "chapter": "Decisions",
+      "characters": 770
+    },
+    {
+      "page": 119,
+      "printed_page": 109,
+      "chapter": "Decisions",
+      "characters": 1430
+    },
+    {
+      "page": 120,
+      "printed_page": 110,
+      "chapter": "Decisions",
+      "characters": 1165
+    },
+    {
+      "page": 126,
+      "printed_page": 116,
+      "chapter": "Loops",
+      "characters": 1363
+    },
+    {
+      "page": 127,
+      "printed_page": 117,
+      "chapter": "Loops",
+      "characters": 1291
+    },
+    {
+      "page": 128,
+      "printed_page": 118,
+      "chapter": "Loops",
+      "characters": 1386
+    },
+    {
+      "page": 129,
+      "printed_page": 119,
+      "chapter": "Loops",
+      "characters": 1104
+    },
+    {
+      "page": 130,
+      "printed_page": 120,
+      "chapter": "Loops",
+      "characters": 1054
+    },
+    {
+      "page": 131,
+      "printed_page": 121,
+      "chapter": "Loops",
+      "characters": 1114
+    },
+    {
+      "page": 132,
+      "printed_page": 122,
+      "chapter": "Loops",
+      "characters": 1371
+    },
+    {
+      "page": 133,
+      "printed_page": 123,
+      "chapter": "Loops",
+      "characters": 1030
+    },
+    {
+      "page": 134,
+      "printed_page": 124,
+      "chapter": "Loops",
+      "characters": 571
+    },
+    {
+      "page": 135,
+      "printed_page": 125,
+      "chapter": "Loops",
+      "characters": 1064
+    },
+    {
+      "page": 136,
+      "printed_page": 126,
+      "chapter": "Loops",
+      "characters": 926
+    },
+    {
+      "page": 137,
+      "printed_page": 127,
+      "chapter": "Loops",
+      "characters": 1337
+    },
+    {
+      "page": 138,
+      "printed_page": 128,
+      "chapter": "Loops",
+      "characters": 935
+    },
+    {
+      "page": 139,
+      "printed_page": 129,
+      "chapter": "Loops",
+      "characters": 961
+    },
+    {
+      "page": 140,
+      "printed_page": 130,
+      "chapter": "Loops",
+      "characters": 1025
+    },
+    {
+      "page": 141,
+      "printed_page": 131,
+      "chapter": "Loops",
+      "characters": 1560
+    },
+    {
+      "page": 142,
+      "printed_page": 132,
+      "chapter": "Loops",
+      "characters": 630
+    },
+    {
+      "page": 143,
+      "printed_page": 133,
+      "chapter": "Loops",
+      "characters": 1718
+    }
+  ],
+  "normalization": "NFKC; strip repeated attribution/footer from searchable text (retain as chunk metadata); preserve line breaks and code indentation. No OCR.",
+  "limitations": [
+    "PDF reading order can mix table columns. Figures/video content not ingested.",
+    "PDF contains apparent textbook errors (e.g. temperature formula); answers must distinguish source statements from Python correctness.",
+    "Footer removal recognizes only some layouts; residual printed page/chapter footer strings remain. No normalization changes made after held-out evaluation."
+  ]
+}

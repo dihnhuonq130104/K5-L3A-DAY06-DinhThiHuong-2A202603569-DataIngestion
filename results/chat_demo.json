@@ -1,0 +1,79 @@
+{
+  "at": "2026-11-13T11:58:08.677230+00:00",
+  "question": "When does a loop else block run, and what happens if the loop exits with break?",
+  "answer": "A loop `else` block runs after the loop finishes normally, meaning the loop completes “without being interrupted by a `break`.” This applies to both `for` and `while` loops. [PDF p.140; printed p.130]\n\nIf the loop exits with `break`, the `else` block does not run, because `break` causes execution to exit the loop early when a condition is triggered. [PDF p.140; printed p.130] [PDF p.137; printed p.127]",
+  "model": "gpt-5.4",
+  "citation_check": "passed",
+  "response_complete": true,
+  "usage": {
+    "input_tokens": 1233,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 111,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1344
+  },
+  "hits": [
+    {
+      "chunk_id": "0069cee3bafcac13adb6f018",
+      "text": "5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\nTRY IT\nTRY IT\n130     5 • Loops",
+      "metadata": {
+        "document_id": "openstax-python-2026",
+        "printed_page": 130,
+        "extraction_status": "ok",
+        "source": "https://openstax.org/details/books/introduction-python-programming",
+        "char_start": 633,
+        "attribution": "Access for free at openstax.org",
+        "chunk_method": "section_sentence_v2",
+        "chapter": "Loops",
+        "page": 140,
+        "section": "5.5",
+        "char_end": 1025,
+        "language": "en"
+      },
+      "score": 0.5994096994400024
+    },
+    {
+      "chunk_id": "705b00f4b85f2446752d6dbf",
+      "text": "5.4 Break and continue\nLearning objectives\nBy the end of this section you should be able to\n• Analyze a loop's execution with break and continue statements.\n• Use break and continue control statements in while and for loops.\nBreak\nA break statement is used within a for or a while loop to allow the program execution to exit the loop once a\ngiven condition is triggered. A break statement can be used to improve runtime efficiency when further loop\nexecution is not required.\nEx: A loop that looks for the character \"a\" in a given string called user_string. The loop below is a regular\nfor loop for going through all the characters of user_string. If the character is found, the break statement\ntakes execution out of the for loop. Since the task has been accomplished, the rest of the for loop execution\nis bypassed.\nuser_string = \"This is a string.\"\nfor i in range(len(user_string)):\n  if user_string[i] == 'a':\n    print(\"Found at index:\", i)\n    break\nCHECKPOINT\nBreak statement in a while loop\nBreak statement in a while loop; ch 5, video 6 (https://www.openstax.org/r/while-break)\nTRY IT",
+      "metadata": {
+        "char_start": 244,
+        "chunk_method": "section_sentence_v2",
+        "language": "en",
+        "char_end": 1337,
+        "extraction_status": "ok",
+        "chapter": "Loops",
+        "source": "https://openstax.org/details/books/introduction-python-programming",
+        "section": "5.4",
+        "attribution": "Access for free at openstax.org",
+        "page": 137,
+        "printed_page": 127,
+        "document_id": "openstax-python-2026"
+      },
+      "score": 0.5524688959121704
+    },
+    {
+      "chunk_id": "586d98695295c46ea333e861",
+      "text": "INFINITE LOOP\nA break statement is an essential part of a loop that does not have a termination condition. A loop without\na termination condition is known as an infinite loop. Ex: An infinite loop that counts up starting from 1 and\nprints the counter's value while the counter's value is less than 10. A break condition is triggered when the\ncounter's value is equal to 10, and hence the program execution exits.\ncounter = 1\nwhile True:\n  if counter >= 10:\n    break\n  print(counter)\n  counter += 1\nCONCEPTS IN PRACTICE\nUsing a break statement\n1 . What is the following code's output?\nstring_val = \"Hello World\"\nfor c in string_val:\n  if c == \" \":\n    break\n  print(c)\na. Hello\nb. Hello World\nc. H\ne\nl\nl\no\n2 . Given the following code, how many times does the print statement get executed?\ni = 1\nwhile True:\n  if i%3 == 0 and i%5 == 0:\n    print(i)\n    break\n  i += 1\na. 0\nb. 1\nc. 15\n3 . What is the final value of i?\n128     5 • Loops",
+      "metadata": {
+        "document_id": "openstax-python-2026",
+        "chunk_method": "section_sentence_v2",
+        "chapter": "Loops",
+        "printed_page": 128,
+        "section": "5.4",
+        "page": 138,
+        "char_start": 0,
+        "language": "en",
+        "attribution": "Access for free at openstax.org",
+        "extraction_status": "ok",
+        "char_end": 935,
+        "source": "https://openstax.org/details/books/introduction-python-programming"
+      },
+      "score": 0.537878155708313
+    }
+  ]
+}
